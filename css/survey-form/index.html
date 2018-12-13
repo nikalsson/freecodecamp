@@ -1,0 +1,107 @@
+<!doctype html>
+<!--Freecodecamp project-->
+<!--https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form/-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Survey Form</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+
+  <form id="survey-form">
+    <fieldset>
+      <p id="description">What would you like to study?</p>
+      <div class="row">
+        <div class="labels">
+          <label for="name" id="name-label">* Name: </label>
+        </div>
+        <div class="inputs">
+          <input type="text" id="name" class="input-field" placeholder="Please enter your name." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels">
+          <label for="email" id="email-label">* Email: </label>
+        </div>
+        <div class="inputs">
+          <input type="email" id="email" class="input-field" placeholder="Please enter your email." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels">
+          <label for="number" id="number-label">* Rating 1-10: </label>
+        </div>
+        <div class="inputs">
+          <input type="number" id="number" min="1" max="10" required placeholder="Please rate from 1 to 10.">
+        </div>
+      </div>
+      <div class="row">
+      <div class="labels">
+        <label for="status" id="dropdown">Employment status: </label>
+      </div>
+      <div class="inputs">
+        <select id="dropdown">
+          <option disabled>Select your status</option>
+          <option value="Unemployed">Unemployed</option>
+          <option value="Student">Student</option>
+          <option value="Employed">Employed</option>
+          <option value="Retired">Retired</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="labels">
+          <label for="radio-buttons" id="willingness">Willing to study: </label>
+        </div>
+        <div class="inputs">
+          <ul id="willingness" style="list-style: none">
+            <li class="radio"><label><input type="radio" name="radio-buttons" value="1" class="radio-buttons"> No</label></li>
+            <li class="radio"><label><input type="radio" name="radio-buttons" value="2" class="radio-buttons"> Maybe</label></li>
+            <li class="radio"><label><input type="radio" name="radio-buttons" value="3" class="radio-buttons"> Yes</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels">
+          <label for="subjects" id="subjects">Subjects to study: </label>
+        </div>
+        <div class="inputs">
+          <ul id="subjects" style="list-style: none">
+            <li class="checkbox"><label><input type="checkbox" value="1"></label> Mathematics</li>
+            <li class="checkbox"><label><input type="checkbox" value="2"></label> Languages</li>
+            <li class="checkbox"><label><input type="checkbox" value="3"> Health & Safety</label></li>
+            <li class="checkbox"><label><input type="checkbox" value="4"> Computer Sciences</label></li>
+          </ul>  
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels">
+          <label for="add-info">Additional information</label>
+        </div>
+        <div class="inputs">
+          <textarea id="add-info" placeholder="Write additional information here." cols="30" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels">
+          <label for="submit">Submit</label>
+        </div>
+        <div class="inputs">
+          <button id="submit">Submit!</button>
+        </div>
+      </div>
+      
+    </fieldset>
+  </form>
+  
+  <script src="script.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

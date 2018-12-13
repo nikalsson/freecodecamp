@@ -1,0 +1,51 @@
+body {
+  background-color: #A6D2F5;
+  font-family: verdana;
+  padding: 5vw 20vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas:
+    "title"
+    "form";
+}
+
+h1 {
+  grid-area: title;
+  text-align: center;
+}
+
+form {
+  grid-area: form;
+  margin: auto;
+  width: 50vw;
+}
+
+ul {
+  padding-left: 0;
+  vertical-align: top;
+  margin-top: 0
+}
+
+.row {
+  padding-top: 20px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  vertical-align: top;
+  padding-right: 15px;
+}
+
+.inputs {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  vertical-align: top;
+}
+
+#description {
+  text-align: center;
+}

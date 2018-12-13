@@ -1,0 +1,41 @@
+body {
+  font-family: tahoma;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  background-color: #eee;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+
+#img-div {
+  background-color: #FFF;
+  padding: 5px;
+  margin: 10px;
+}
+
+#img-div img {
+  
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  display: block;
+  margin: auto;
+}
+
+#tribute-info {
+  text-align: left;
+  line-height: 1.25;
+  margin: 20px 10vw;
+}
+
+#tribute-info ul li {
+  margin-bottom: 10px;
+}

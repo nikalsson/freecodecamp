@@ -1,0 +1,1 @@
+Projects made using pure CSS and HTML, freecodecamp responsive web design projects
